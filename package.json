@@ -1,19 +1,14 @@
 {
   "name": "sleep-lightweight",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight sleep... wait for x milliseconds asynchronously",
   "main": "build/index.js",
   "types": "build/index.d.ts",
-  "type": "module",
-  "bin": {
-    "gsdf": "build/cli.js"
-  },
   "scripts": {
     "clear-build-folder": "rm -rf ./build",
     "transpile": "tsc",
     "fix-paths": "tsc-alias",
-    "fix-src-paths": "cd build && mv ./src/* . && rm -rf ./src",
-    "build": "yarn clear-build-folder && yarn transpile && yarn fix-paths && yarn fix-src-paths",
+    "build": "yarn clear-build-folder && yarn transpile && yarn fix-paths",
     "dev": "yarn nodemon"
   },
   "keywords": [

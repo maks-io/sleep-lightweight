@@ -9,10 +9,7 @@
     "declaration": true,
     "paths": {
       "$/*": ["./src/*"]
-    },
-    "module": "ESNext",
-    "resolveJsonModule": true,
-    "rootDir": "."
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/*.spec.ts"]

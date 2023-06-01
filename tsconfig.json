@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "esModuleInterop": true,
+    "lib": ["ES2020", "DOM"],
+    "moduleResolution": "Node",
+    "outDir": "build",
+    "jsx": "react",
+    "declaration": true,
+    "paths": {
+      "$/*": ["./src/*"]
+    },
+    "module": "ESNext",
+    "resolveJsonModule": true,
+    "rootDir": "."
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
